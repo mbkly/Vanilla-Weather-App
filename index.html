@@ -15,7 +15,106 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
+      <div class="Weather">
+        <a
+          href="https://www.shecodes.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/SheCodes-logo.png" class="logo" alt="SheCodes Logo"
+        /></a>
+        <form class="city-search" id="search-form">
+          <input
+            type="text"
+            class="input-city"
+            placeholder=" Enter a city"
+            autocomplete="off"
+            id="city-name"
+          />
+          <input
+            type="submit"
+            class="btn btn-primary"
+            value="Search"
+            id="search-button"
+          />
+          <button class="btn btn-success">Current</button>
+          <button class="currentLocation" id="currentLocation">
+            📍Current location
+          </button>
+        </form>
+        <div class="row">
+          <div class="col city" id="city">
+            <h1>Seattle</h1>
+            <div id="currentTime">Thursday 2:20PM</div>
+            <div id="currentDescription">Light rain showers</div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="images/Weather_Isometric.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 current-conditions">
+            <span class="rain-icon">
+              <img src="images/rain.svg" />
+            </span>
+            <span class="temperature" id="currentTemp">65</span>
+            <span>
+              <a href="#" id="fahrenheitSymbol" style="text-decoration: none"
+                >°F</a
+              >
+            </span>
+            <span>|</span>
+            <span>
+              <a href="#" id="celsiusSymbol" style="text-decoration: none"
+                >°C</a
+              >
+            </span>
+          </div>
+          <div class="col-4">
+            <div>Precipation: 20%</div>
+            <div>Humidity: 64%</div>
+            <div>Wind: 8mph</div>
+          </div>
+        </div>
+        <hr />
+        <div class="row forecast">
+          <div class="col">
+            <div>Fri</div>
+            <div>53°/65°</div>
+            <div>
+              <i class="fa-solid fa-cloud-rain"></i>
+            </div>
+          </div>
+          <div class="col">
+            <div>Sat</div>
+            <div>51°/68°</div>
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <div class="col">
+            <div>Sun</div>
+            <div>48°/61°</div>
+            <i class="fa-solid fa-cloud-rain"></i>
+          </div>
+          <div class="col">
+            <div>Mon</div>
+            <div>48°/60°</div>
+            <i class="fa-solid fa-cloud-rain"></i>
+          </div>
+          <div class="col">
+            <div>Tue</div>
+            <div>48°/62°</div>
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <small>
+          Open-source code, by Mary Buckley from
+          <a href="https://shecodes.io/" target="_blank">SheCodes</a>
+        </small>
+      </footer>
     </div>
     <script src="src/app.js"></script>
   </body>
