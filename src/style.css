@@ -1,3 +1,72 @@
-h1 {
-  color: darkslategrey;
+.logo {
+  display: block;
+  width: auto;
+  height: auto;
+}
+body {
+  font-family: "Crimson Pro", serif;
+  font-size: 25px;
+}
+.container {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2.5px 2.5px 10px gray;
+  margin: 50px 50px 10px 50px;
+  padding: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: all 200ms ease;
+  opacity: 1;
+  color: white;
+}
+.currentLocation {
+  background-color: cadetblue;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 2.5px 2.5px 10px gray;
+  font-size: medium;
+}
+.input-city {
+  width: 400px;
+}
+.city-search {
+  display: flex;
+  grid-gap: 8px;
+  font-size: 30px;
+}
+.city {
+  color: cadetblue;
+}
+img,
+.rain-icon {
+  width: 150px;
+  height: 150px;
+}
+.current-conditions {
+  display: flex;
+}
+.degrees {
+  line-height: 3;
+}
+.temperature {
+  color: #596d79;
+  font-size: 60px;
+  font-weight: 200;
+}
+.side-bar {
+  color: #596d79;
+}
+.fa-solid {
+  color: cadetblue;
+}
+.forecast {
+  text-align: center;
+}
+footer {
+  color: #c24d2c;
+  margin: 20px 50px;
+  text-align: left;
 }
