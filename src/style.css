@@ -74,7 +74,11 @@ img,
 .forecast-day {
   color: cadetblue;
 }
+.forecast-temperature-max {
+  color: #596d79;
+}
 .forecast-temperature-min {
+  color: #596d79;
   opacity: 0.6;
 }
 footer {
