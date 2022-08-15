@@ -51,6 +51,12 @@ img,
 .degrees {
   line-height: 3;
 }
+.humidity {
+  color: cadetblue;
+}
+.wind {
+  color: cadetblue;
+}
 .temperature {
   color: #596d79;
   font-size: 60px;
