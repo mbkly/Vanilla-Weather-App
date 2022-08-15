@@ -65,6 +65,9 @@ img,
 .forecast {
   text-align: center;
 }
+.forecast-temperature-min {
+  opacity: 0.6;
+}
 footer {
   color: #c24d2c;
   margin: 20px 50px;
