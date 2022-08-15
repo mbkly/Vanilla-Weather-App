@@ -65,6 +65,9 @@ img,
 .forecast {
   text-align: center;
 }
+.forecast-day {
+  color: cadetblue;
+}
 .forecast-temperature-min {
   opacity: 0.6;
 }
