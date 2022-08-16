@@ -62,6 +62,9 @@ function currentWeather(response) {
   let humidity = document.querySelector("#humidity");
   let humidityPercentage = response.data.main.humidity;
   humidity.innerHTML = humidityPercentage;
+  let wind = document.querySelector("#wind");
+  let windSpeed = Math.round(response.data.wind.speed);
+  wind.innerHTML = windSpeed;
 }
 
 function handlePosition(position) {
@@ -91,6 +94,9 @@ function newCitytemp(response) {
   let humidity = document.querySelector("#humidity");
   let humidityPercentage = response.data.main.humidity;
   humidity.innerHTML = humidityPercentage;
+  let wind = document.querySelector("#wind");
+  let windSpeed = Math.round(response.data.wind.speed);
+  wind.innerHTML = windSpeed;
 }
 
 function handleCity(position) {
