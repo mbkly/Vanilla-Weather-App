@@ -1,5 +1,4 @@
 function formatDate(timestamp) {
-  // calculate the date
   let date = new Date(timestamp);
   let hour = date.getHours();
   if (hour < 10) {
@@ -19,7 +18,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day} ${hour}:${minutes}`;
+  return `Last updated: ${day} ${hour}:${minutes}`;
 }
 
 function city(event) {
@@ -69,6 +68,7 @@ function currentWeather(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function handlePosition(position) {
@@ -108,6 +108,7 @@ function newCitytemp(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function handleCity(position) {
