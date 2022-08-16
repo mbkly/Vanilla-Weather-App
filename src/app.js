@@ -59,6 +59,9 @@ function currentWeather(response) {
   let h1 = document.querySelector("h1");
   let cityName = response.data.name;
   h1.innerHTML = cityName;
+  let humidity = document.querySelector("#humidity");
+  let humidityPercentage = response.data.main.humidity;
+  humidity.innerHTML = humidityPercentage;
 }
 
 function handlePosition(position) {
@@ -85,6 +88,9 @@ function newCitytemp(response) {
   let city = document.querySelector("h1");
   let cityName = response.data.name;
   city.innerHTML = cityName;
+  let humidity = document.querySelector("#humidity");
+  let humidityPercentage = response.data.main.humidity;
+  humidity.innerHTML = humidityPercentage;
 }
 
 function handleCity(position) {
