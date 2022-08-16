@@ -39,6 +39,8 @@ button:hover {
 }
 h1 {
   color: #c24d2c;
+  font-size: 38px;
+  font-weight: 700;
 }
 img,
 .rain-icon {
