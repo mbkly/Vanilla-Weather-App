@@ -42,7 +42,7 @@ h1 {
   font-size: 45px;
   font-weight: 800;
 }
-#currentDescription {
+#currentDescription:first-letter {
   text-transform: capitalize;
 }
 img,
@@ -59,8 +59,14 @@ img,
 .humidity {
   color: cadetblue;
 }
+#humidity {
+  color: #596d79;
+}
 .wind {
   color: cadetblue;
+}
+#wind {
+  color: #596d79;
 }
 .temperature {
   color: #596d79;

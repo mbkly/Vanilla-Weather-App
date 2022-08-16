@@ -1,4 +1,14 @@
-function formatDate(date) {
+function formatDate(timestamp) {
+  // calculate the date
+  let date = new Date(timestamp);
+  let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let days = [
     "Sunday",
     "Monday",
@@ -8,22 +18,9 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-  let hour = date.getHours();
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
   let day = days[date.getDay()];
-
   return `${day} ${hour}:${minutes}`;
 }
-
-let dateElement = document.querySelector("#currentTime");
-let date = new Date();
-dateElement.innerHTML = formatDate(date);
 
 function city(event) {
   event.preventDefault();
@@ -65,6 +62,13 @@ function currentWeather(response) {
   let wind = document.querySelector("#wind");
   let windSpeed = Math.round(response.data.wind.speed);
   wind.innerHTML = windSpeed;
+  let dateElement = document.querySelector("#currentTime");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function handlePosition(position) {
@@ -97,6 +101,13 @@ function newCitytemp(response) {
   let wind = document.querySelector("#wind");
   let windSpeed = Math.round(response.data.wind.speed);
   wind.innerHTML = windSpeed;
+  let dateElement = document.querySelector("#currentTime");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function handleCity(position) {
