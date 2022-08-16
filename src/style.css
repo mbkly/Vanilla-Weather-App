@@ -42,6 +42,9 @@ h1 {
   font-size: 45px;
   font-weight: 800;
 }
+#currentDescription {
+  text-transform: capitalize;
+}
 img,
 .rain-icon {
   width: 150px;
