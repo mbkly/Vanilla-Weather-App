@@ -18,7 +18,7 @@ body {
 #search-button {
   border-radius: 10px;
   box-shadow: 2.5px 2.5px 10px grey;
-  width: 80px;
+  width: fit-content;
 }
 button:hover {
   cursor: pointer;
@@ -33,6 +33,7 @@ button:hover {
   border-radius: 10px;
   box-shadow: 2.5px 2.5px 10px gray;
   font-size: medium;
+  width: fit-content;
 }
 .input-city {
   width: 400px;
