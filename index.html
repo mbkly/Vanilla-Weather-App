@@ -63,11 +63,10 @@
           <span> |</span>
           <span>
             <a href="#" id="fahrenheitLink" style="text-decoration: none"
-              >°F</a
-            >
+              >°F</a>
           </span>
         </div>
-        <div class="col-4">
+        <div class="col-4 side-conditions">
           <div class="humidity">Humidity: <span id="humidity">64</span><span id="humidity">%</span>
           </div> 
           <div class="wind">Wind: <span id="wind">8</span><span id="wind">km/h</span>
@@ -75,59 +74,15 @@
         </div>
       </div>
       <hr />
-      <div class="row forecast">
-        <div class="col">
-          <div class="forecast-day">Fri</div>
-          <div class="forecast-temperature">
-          <span class="forecast-temperature-max">65°</span> 
-          <span class="forecast-temperature-min">53°</span> 
-          </div>
-          <i class="fa-solid fa-cloud-rain"></i>
-        </div>
-        <div class="col">
-          <div class="forecast-day">Sat</div>
-          <div class="forecast-temperature">
-          <span class="forecast-temperature-max">68°</span>
-          <span class="forecast-temperature-min">51°</span>
-          </div>
-          <i class="fa-solid fa-cloud-sun"></i>
-        </div>
-        <div class="col">
-          <div class="forecast-day">Sun</div>
-          <div class="forecast-temperature">
-          <span class="forecast-temperature-max">61°</span>
-          <span class="forecast-temperature-min">48°</span>  
-          </div>
-          <i class="fa-solid fa-cloud-rain"></i>
-        </div>
-        <div class="col">
-          <div class="forecast-day">Mon</div>
-          <div class="forecast-temperature">
-          <span class="forecast-temperature-max">60°</span>
-          <span class="forecast-temperature-min">48°</span>  
-          </div>
-          <i class="fa-solid fa-cloud-rain"></i>
-        </div>
-        <div class="col">
-          <div class="forecast-day">Tue</div>
-          <div class="forecast-temperature">
-          <span class="forecast-temperature-max">62°</span>
-          <span class="forecast-temperature-min">48°</span>  
-          </div>
-          <i class="fa-solid fa-cloud-sun"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-    <footer>
+        <div class="col" id="forecast"></div>
+  <footer>
       <small>
         Open-source code, by Mary Buckley from
         <a href="https://shecodes.io/" target="_blank" class="footer">SheCodes</a> and is <a href= "https://github.com/mbkly/Vanilla-Weather-App" target = "_blank" class="footer"> open-sourced on GitHub</a> and <a href= "https://starlit-kelpie-a322ed.netlify.app/" target = "_blank" class="footer"> hosted on Netlify</a>
       </small>
-    </footer>
+  </footer>
     <script src="src/app.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js">
     </script>
-  </head>
   </body>
 </html>
