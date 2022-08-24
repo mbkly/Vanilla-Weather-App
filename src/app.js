@@ -36,7 +36,8 @@ function displayForecast(response) {
   let days = ["Thurs", "Fri", "Sat", "Sun"];
 
   dailyForecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5);
+    {
       forecastHTML =
         forecastHTML +
         `
@@ -74,6 +75,7 @@ function getForecast(coordinates) {
   let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(apiURL).then(displayForecast);
 }
+
 function city(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-name");
@@ -85,9 +87,10 @@ function city(event) {
 function changeFahrenheit(event) {
   event.preventDefault();
   let fahrenheit = document.querySelector("#currentTemp");
-
-  celsius.classList.remove("active");
-  fahrenheit.classList.add("active");
+  let fahrenheitLink = document.querySelector("#fahrenheitLink");
+  let celsiusLink = document.querySelector("#celsiusLink");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   fahrenheit.innerHTML = Math.round(fahrenheitTemperature);
 }
@@ -95,9 +98,10 @@ function changeFahrenheit(event) {
 function changeCelsius(event) {
   event.preventDefault();
   let celsius = document.querySelector("#currentTemp");
-
-  celsius.classList.add("active");
-  fahrenheit.classList.remove("active");
+  let celsiusLink = document.querySelector("#celsiusLink");
+  let fahrenheitLink = document.querySelector("#fahrenheitLink");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   celsius.innerHTML = Math.round(celsiusTemperature);
 }
 
