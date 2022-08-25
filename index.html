@@ -14,20 +14,21 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
     />
-    <title>weather wireframe hw</title>
+    <title>Vanilla Weather App</title>
     <script
       src="https://kit.fontawesome.com/ec38bdd50d.js"
       crossorigin="anonymous"
     ></script>
-    </head>
+  </head>
   <body>
     <div class="container">
     <div class = "Weather">
+       <img src="src/images/SheCodes-logo.png" alt="clear" id = "SheCodesLogo">
       <form class="city-search" id="search-form">
         <input
           type="text"
           class="input-city"
-          placeholder=" Enter a city"
+          placeholder=" Enter a city..."
           autocomplete="off"
           id="city-name"
         />
@@ -37,12 +38,12 @@
           value="Search"
           id="search-button"
         />
-        <button class="currentLocation" id="currentLocation"> 📍Current location </button>
+        <button class="currentLocation" id="currentLocation"> 📍Current Location </button>
       </form>
       <div class="row">
         <div class="col city" id="city">
           <h1>Seattle</h1>
-          <div id="currentTime">Thursday 2:20PM</div>
+          <div id="currentTime">Thursday</div>
           <div id="currentDescription">Light rain showers</div>
         </div>
         <div class="col-4">
@@ -75,7 +76,6 @@
       </div>
       <hr />
         <div class="col" id="forecast"></div>
-      <hr />
   <footer>
       <small>
         This project was coded by Mary Buckley from
