@@ -12,15 +12,16 @@ body {
   font-size: 25px;
   margin: 30px 200px;
   padding: 30px;
-  background-color: #f9f7fe;
+  background-color: #f9f7fd;
 }
+
 .container {
-  border: 0.25px solid white;
+  border: 0.15px solid #f3e7e9;
   border-radius: 20px;
   box-shadow: 2.5px 2.5px 10px gray;
   padding: 30px auto;
   margin: auto;
-  background-color: white;
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
 }
 
 #search-button {
@@ -28,13 +29,16 @@ body {
   box-shadow: 2.5px 2.5px 10px grey;
   font-size: 20px;
   width: 180px;
+  color: #f9f7fd;
 }
+
 button:hover {
   cursor: pointer;
   transition: all 200ms ease;
   opacity: 1;
   color: white;
 }
+
 .currentLocation {
   background-color: cadetblue;
   color: white;
@@ -44,27 +48,31 @@ button:hover {
   font-size: 20px;
   width: 180px;
 }
+
 .input-city {
   width: 430px;
   border-radius: 6px;
   border: 1px solid gray;
   color: rgba(39, 33, 66, 0.4);
-  background: #f9f7fe;
   height: 50px;
 }
+
 .city-search {
   display: flex;
   grid-gap: 8px;
   font-size: 30px;
 }
+
 h1 {
   color: cadetblue;
   font-size: 60px;
   font-weight: 800;
 }
+
 #currentDescription:first-letter {
   text-transform: capitalize;
 }
+
 img,
 .rain-icon {
   width: 150px;
@@ -75,55 +83,71 @@ img,
   color: black;
   cursor: default;
 }
+
 .current-conditions {
   display: flex;
 }
+
 .degrees {
   line-height: 3;
 }
+
 .humidity {
   color: cadetblue;
 }
+
 #humidity {
   color: #596d79;
 }
+
 .wind {
   color: cadetblue;
 }
+
 #wind {
   color: #596d79;
 }
+
 .temperature {
   color: #596d79;
   font-size: 60px;
   font-weight: 200;
 }
+
 .side-bar {
   color: #596d79;
 }
+
 .fa-solid {
   color: cadetblue;
 }
+
 .side-conditions {
   font-size: 30px;
 }
+
 .forecast-day {
   color: cadetblue;
   font-size: 30px;
-  padding: 10px 20px 10px 50px;
+  padding: 10px 20px 5px 50px;
 }
+
 .forecast-temperature {
-  padding: 10px 20px 10px 50px;
+  padding: 10px 20px 10px 40px;
 }
+
 .forecast-temperature-max {
   color: #596d79;
+  padding-right: 8px;
 }
+
 .forecast-temperature-min {
   color: #596d79;
   opacity: 0.6;
 }
+
 footer {
-  color: #c24d2c;
+  color: #596d79;
   margin: 20px 50px;
   text-align: center;
   font-size: 18px;
