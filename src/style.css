@@ -3,6 +3,7 @@
   display: block;
   width: 150px;
   height: 60px;
+  margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -28,7 +29,7 @@ body {
   border-radius: 10px;
   box-shadow: 2.5px 2.5px 10px grey;
   font-size: 20px;
-  width: 180px;
+  width: 150px;
   color: #f9f7fd;
 }
 
@@ -46,11 +47,13 @@ button:hover {
   border-radius: 10px;
   box-shadow: 2.5px 2.5px 10px grey;
   font-size: 20px;
-  width: 180px;
+  width: 170px;
+  margin-right: 20px;
 }
 
 .input-city {
-  width: 430px;
+  width: 420px;
+  margin-left: 20px;
   border-radius: 6px;
   border: 1px solid gray;
   color: rgba(39, 33, 66, 0.4);
@@ -63,6 +66,10 @@ button:hover {
   font-size: 30px;
 }
 
+.city {
+  padding: 0 30px;
+}
+
 h1 {
   color: cadetblue;
   font-size: 60px;
@@ -71,6 +78,14 @@ h1 {
 
 #currentDescription:first-letter {
   text-transform: capitalize;
+}
+
+#currentDescription {
+  color: #596d79;
+}
+
+#currentTime {
+  color: #596d79;
 }
 
 img,
