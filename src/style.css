@@ -13,11 +13,11 @@ body {
   font-size: 25px;
   margin: 30px 200px;
   padding: 30px;
-  background-color: #f9f7fd;
+  background-color: #dad4ec;
 }
 
 .container {
-  border: 0.15px solid #f3e7e9;
+  border: 0.15px solid #dad4ec;
   border-radius: 20px;
   box-shadow: 2.5px 2.5px 10px gray;
   padding: 30px auto;
